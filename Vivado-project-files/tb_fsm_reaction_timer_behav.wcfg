@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_fsm_reaction_timer_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_fsm_reaction_timer" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="7204993308fs"></ZoomStartTime>
+      <ZoomEndTime time="7205001339fs"></ZoomEndTime>
+      <Cursor1Time time="7205000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="116"></NameColumnWidth>
+      <ValueColumnWidth column_width="58"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="15" />
+   <wvobject fp_name="/tb_fsm_reaction_timer/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fsm_reaction_timer/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fsm_reaction_timer/tick_1ms" type="logic">
+      <obj_property name="ElementShortName">tick_1ms</obj_property>
+      <obj_property name="ObjectShortName">tick_1ms</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fsm_reaction_timer/start_button" type="logic">
+      <obj_property name="ElementShortName">start_button</obj_property>
+      <obj_property name="ObjectShortName">start_button</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fsm_reaction_timer/reaction_button" type="logic">
+      <obj_property name="ElementShortName">reaction_button</obj_property>
+      <obj_property name="ObjectShortName">reaction_button</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fsm_reaction_timer/random_value" type="array">
+      <obj_property name="ElementShortName">random_value[7:0]</obj_property>
+      <obj_property name="ObjectShortName">random_value[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fsm_reaction_timer/state_out" type="array">
+      <obj_property name="ElementShortName">state_out[6:0]</obj_property>
+      <obj_property name="ObjectShortName">state_out[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fsm_reaction_timer/signal_led" type="logic">
+      <obj_property name="ElementShortName">signal_led</obj_property>
+      <obj_property name="ObjectShortName">signal_led</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fsm_reaction_timer/reaction_time" type="array">
+      <obj_property name="ElementShortName">reaction_time[15:0]</obj_property>
+      <obj_property name="ObjectShortName">reaction_time[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fsm_reaction_timer/average_time" type="array">
+      <obj_property name="ElementShortName">average_time[15:0]</obj_property>
+      <obj_property name="ObjectShortName">average_time[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fsm_reaction_timer/game_complete" type="logic">
+      <obj_property name="ElementShortName">game_complete</obj_property>
+      <obj_property name="ObjectShortName">game_complete</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fsm_reaction_timer/false_start" type="logic">
+      <obj_property name="ElementShortName">false_start</obj_property>
+      <obj_property name="ObjectShortName">false_start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fsm_reaction_timer/debug_counter" type="array">
+      <obj_property name="ElementShortName">debug_counter[15:0]</obj_property>
+      <obj_property name="ObjectShortName">debug_counter[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fsm_reaction_timer/tick_counter" type="array">
+      <obj_property name="ElementShortName">tick_counter[6:0]</obj_property>
+      <obj_property name="ObjectShortName">tick_counter[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fsm_reaction_timer/prev_state" type="array">
+      <obj_property name="ElementShortName">prev_state[6:0]</obj_property>
+      <obj_property name="ObjectShortName">prev_state[6:0]</obj_property>
+   </wvobject>
+</wave_config>

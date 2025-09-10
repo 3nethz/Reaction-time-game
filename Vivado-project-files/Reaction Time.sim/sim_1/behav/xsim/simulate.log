@@ -1,0 +1,37 @@
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+=== FSM Reaction Timer Testbench Started ===
+Time: 0 - Initializing system
+*** SIGNAL LED TURNED OFF at time 0 ***
+Time: 200000 - Reset released
+Random value set to: 0x42 (66)
+[1195000] Status: State=            IDLE, LED=0, RT=0, Counter=0
+Time: 1200000 - Current state:             IDLE
+
+=== Starting Game Test ===
+Time: 1200000 - Pressing start button
+>>> START BUTTON PRESSED at time 1200000 <<<
+Time: 1400000 - Start button released
+Time: 1900000 - Current state:             IDLE
+Time: 1900000 - Waiting for signal LED...
+[2195000] Status: State=            IDLE, LED=0, RT=0, Counter=2
+STATE CHANGE:             IDLE ->      WAIT_RANDOM at time 3195000
+[3195000] Status: State=     WAIT_RANDOM, LED=0, RT=0, Counter=1
+[4195000] Status: State=     WAIT_RANDOM, LED=0, RT=0, Counter=0
+Time: 4205000 - SIGNAL LED ON! Current state:      WAIT_RANDOM
+*** SIGNAL LED TURNED ON at time 4205000 ***
+Time: 4705000 - Reacting to signal (pressing reaction button)
+>>> REACTION BUTTON PRESSED at time 4705000 <<<
+Time: 4905000 - Reaction button released
+[5195000] Status: State=     WAIT_RANDOM, LED=1, RT=0, Counter=0
+Time: 5205000 - Current state:      WAIT_RANDOM
+Time: 5205000 - Reaction time: 0 ms
+Time: 5205000 - Game complete: 0
+Time: 5205000 - False start: 0
+STATE CHANGE:      WAIT_RANDOM ->      SHOW_SIGNAL at time 6195000
+[6195000] Status: State=     SHOW_SIGNAL, LED=1, RT=0, Counter=0
+STATE CHANGE:      SHOW_SIGNAL ->     MEASURE_TIME at time 7195000
+[7195000] Status: State=    MEASURE_TIME, LED=1, RT=0, Counter=0
+
+=== Test Completed Successfully ===
+$finish called at time : 7205 ns : File "F:/Sem 7/HDL Project/tb_fsm_reaction_timer.v" Line 123

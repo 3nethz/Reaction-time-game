@@ -1,0 +1,8 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Sem 7/HDL Project/binary_to_bcd.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module binary_to_bcd
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Sem 7/HDL Project/fsm_reaction_timer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fsm_reaction_timer
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Sem 7/HDL Project/seven_seg_decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seven_seg_decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Sem 7/HDL Project/tb_fsm_reaction_timer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_fsm_reaction_timer

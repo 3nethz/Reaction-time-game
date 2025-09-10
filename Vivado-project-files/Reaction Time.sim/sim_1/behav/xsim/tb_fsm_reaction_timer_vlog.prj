@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"F:/Sem 7/HDL Project/binary_to_bcd.v" \
+"F:/Sem 7/HDL Project/fsm_reaction_timer.v" \
+"F:/Sem 7/HDL Project/seven_seg_decoder.v" \
+"F:/Sem 7/HDL Project/tb_fsm_reaction_timer.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
