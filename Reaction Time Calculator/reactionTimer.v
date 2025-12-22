@@ -52,16 +52,25 @@ module reactionTimer(
     end
 
     // --- Random countdown (3-10s) ---
+    // Free-running random counter that cycles 3->4->...->10->3
     reg [3:0] random_counter_reg;
     always @(posedge clk or posedge clear) begin
         if(clear)
             random_counter_reg <= 4'd3;
-        else if(countdown_go) begin
-            if(countdown_timer_reg > 0)
-                countdown_timer_reg <= countdown_timer_reg - 1;
-            else
-                countdown_timer_reg <= random_counter_reg * 29'd100000000; // reload random delay
-        end
+        else if(random_counter_reg < 4'd10)
+            random_counter_reg <= random_counter_reg + 1;
+        else
+            random_counter_reg <= 4'd3;  // wrap back to 3
+    end
+    
+    // Countdown timer - decrements when active
+    always @(posedge clk or posedge clear) begin
+        if(clear)
+            countdown_timer_reg <= 0;
+        else if(state_reg == idle && start)
+            countdown_timer_reg <= random_counter_reg * 29'd100000000; // sample random value
+        else if(countdown_go && countdown_timer_reg > 0)
+            countdown_timer_reg <= countdown_timer_reg - 1;
     end
     assign countdown_done = (countdown_timer_reg == 0);
 
