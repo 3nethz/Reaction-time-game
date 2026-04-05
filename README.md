@@ -99,12 +99,13 @@ Reaction-time-game/
 
 ```mermaid
 flowchart LR
-	CLK[100 MHz Clock] --> DIV[clock_divider]\n1 ms tick
+	CLK[100 MHz Clock] --> DIV[clock_divider]
+	DIV --> TICK[tick_1ms pulse]
 	BTN_START[Start Button] --> DEB_S[button_debouncer]
 	BTN_REACT[Reaction Button] --> DEB_R[button_debouncer]
-	DIV --> DEB_S
-	DIV --> DEB_R
-	DIV --> FSM[fsm_reaction_timer]
+	TICK --> DEB_S
+	TICK --> DEB_R
+	TICK --> FSM[fsm_reaction_timer]
 	LFSR[lfsr_8bit] --> FSM
 	DEB_S --> FSM
 	DEB_R --> FSM
