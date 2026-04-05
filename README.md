@@ -99,7 +99,7 @@ Reaction-time-game/
 
 ```mermaid
 flowchart LR
-	CLK[100 MHz Clock] --> DIV[clock_divider]\n1 ms tick
+	CLK[100 MHz Clock] --> DIV[clock_divider (1 ms tick)]
 	BTN_START[Start Button] --> DEB_S[button_debouncer]
 	BTN_REACT[Reaction Button] --> DEB_R[button_debouncer]
 	DIV --> DEB_S
